@@ -12,7 +12,7 @@ puts "🍝 Seeding recipes..."
 10.times do
   recipe = Recipe.create!(
     name: Faker::Food.dish,
-    image_url: "https://hips.hearstapps.com/esq.h-cdn.co/assets/15/06/nrm_1423255129-pasta.jpg?resize=480:*",
+    image_url: Faker::Avatar.image,
     description: Faker::Food.description,
     author: Faker::Artist.name
   )
